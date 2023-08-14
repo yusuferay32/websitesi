@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="stil.css">
+    <style>
+        /* Diğer stiller */
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #35424a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #35424a;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #35424a;
+            color: white;
+        } body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #35424a;
+            color: white;
+            padding: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+        color: white;
+        text-decoration: none;
+    }
+    .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html">Hizmetler</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>İletişim</h2>
+        <div class="contact-form">
+            <form action="iletisim_form_islem.php" method="post">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Gelişmiş Web Sitesi | Telif Hakkı © 2023 - Web Sitesi</p>
+    </footer>
+</body>
+</html>
